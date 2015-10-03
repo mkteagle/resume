@@ -1,5 +1,4 @@
 html, body {
-    height: 100%;
 }
 .wrapper {
     overflow: hidden;
@@ -42,7 +41,7 @@ h1 {
 #sideNav {
     margin-top: 200px;
     overflow: hidden;
-    width: 100%;
+    width: 70%;
     height: 100%;
     margin-left: 100px;
 }
@@ -51,6 +50,7 @@ h45 {
     font-size: 3em;
 }
 #main {
+    overflow: scroll;
     min-height: 100%;
     margin-left: 31%;
 }
@@ -61,7 +61,7 @@ h45 {
     font-family: 'Pacifico', cursive;
     font-size: 3em;
 }
-#text_target {
+.text_target {
     font-size: 3em;
 }
 #about {
@@ -75,12 +75,81 @@ h45 {
     float: left;
 }
 #aboutSec {
-    position: relative;
-    height: 700px;
-    width: 100%;
-}
-#experienceSec {
-    position: relative;
     height: 500px;
     width: 100%;
 }
+#experienceSec {
+    height: 500px;
+    width: 100%;
+}
+#eE {
+    font-family: 'Pacifico', cursive;
+    font-size: 3em;
+}
+#validateSec {
+    height: 500px;
+    width: 100%;
+}
+#vE {
+    font-family: 'Pacifico', cursive;
+    font-size: 3em;
+}
+ul.events {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0 20px 0;
+}
+
+ul.events li {
+    -webkit-border-radius: 11px;
+    -moz-border-radius: 11px;
+    border-radius: 11px;
+    background: #eee;
+    border: 1px solid #ddd;
+    color: #707070;
+    font-size: .9em;
+    font-weight: bold;
+    margin-bottom: 6px;
+    padding: 3px 0;
+    position: relative;
+    text-align: center;
+}
+
+ul.events li em {
+    color: #aaa;
+    font-weight: normal;
+    font-size: 0.9em;
+}
+
+ul.intervals {
+    list-style-type: none;
+    padding: 0;
+    display: block;
+}
+
+/* The width depends on the number of intervals. For example 100 / 7 = 14.29% -- then subtract a little bit for room for the borders */
+ul.intervals li {
+    background: #fff url(/images/1x1_eee.gif) repeat-x left 10%;
+    border-right: 1px solid #ccc;
+    color: #999;
+    float: left;
+    font-size: .9em;
+    margin: 0;
+    padding: 15px 0;
+    text-align: center;
+    width: 7%;
+}
+
+ul.intervals li.first {
+    border-left: 1px solid #ccc;
+}
+.bottomBord {
+    border-bottom: 1px solid black;
+}
+#xactware {
+
+}
+#delta {
+}
+[contentEditable=true]:empty:not(:focus):before{
+    content:attr(data-placeholder) }

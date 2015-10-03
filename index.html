@@ -11,7 +11,7 @@
 </head>
 
 <div class="wrapper">
-    <div id="sidebar">
+    <div id="sidebar" class="clearfix">
         <div id="sideNav">
             <div class="myRow">
                 <div class="menu">Hello</a></div>
@@ -21,13 +21,14 @@
                 <div id="about">about</div>
                 <div id="experience">experience</div>
                 <div id="contact">contact</div>
+                <div id="validate">validate</div>
             </div>
         </div>
     </div>
-    <div id="main">
+    <div id="main" class="clearFix">
         <div id="aboutSec">
             <div id="msg">
-            <span id="text_target"></span></div>
+            <span class="text_target"></span></div>
             <div id="bodyOText">
                 <p>Antelope Canyon is a popular location for photographers and sightseers, and a source of
                 tourism business for the Navajo Nation. Private tour companies have been permitted to offer tours since
@@ -60,11 +61,51 @@
             </div>
         </div>
         <div id="experienceSec">
-            <div id="timeline">
-                Work Experience
-                Life Experience
-            </div>
+            <div id="eE"><span class="text_target"></span>Experience</div>
+            <div class="timeline">
+                <ul class="events">
+                    <li style="width: 14%; left: 0;">Delta High School <em>(1997 - 2001)</em></li>
+                    <li style="width: 28%; left: 15%;">Intermountain Healthcare <em>(2005 - 2009)</em></li>
+                    <li style="width: 28%; left: 15%;">Utah State University <em>(2005 - 2009)</em></li>
+                    <li style="width: 21%; left: 35%;">Travelhost Magazine <em>(2008 - 2010)</em></li>
+                    <li style="width: 14%; left: 50%;">TechMedia Network <em>(2010 - 2011)</em></li>
+                    <li style="width: 14%; left: 50%;">Verizon Wireless <em>(2010 - 2011)</em></li>
+                    <li style="width: 35%; left: 57%;">Xactware <em>(2011 - Current)</em></li>
+                    <li style="width: 11%; left: 85%;">Mountainland Applied Tech <em>(2015 - 2016)</em></li>
+
+                </ul> <!-- end .events -->
+
+                <ul class="intervals">
+                    <li class="first">1997</li>
+                    <li>2001</li>
+                    <li>2005</li>
+                    <li>2006</li>
+                    <li>2007</li>
+                    <li>2008</li>
+                    <li>2009</li>
+                    <li>2010</li>
+                    <li>2011</li>
+                    <li>2012</li>
+                    <li>2013</li>
+                    <li>2014</li>
+                    <li>2015</li>
+                    <li class="last">2016</li>
+                </ul> <!-- end .intervals -->
+            </div> <!-- end .timeline -->
         </div>
+        <div id="validateSec">
+            <div id="vE"><span class="text_target"></span>Validate</div>
+            <div class="myRow">
+                <div class="col-lg-6">This is my news if you haven't heard
+                and you can't tell. In 1997, I....</div>
+                <div contentEditable=true data-placeholder="Drag Here" class="col-lg-2 bottomBord" id="delta"></div>
+                <div class="col-lg-8">I spent a lot of my late teens, early 20's working at undefined or null jobs, too many to count.</div>
+                <div class="col-lg-4">But in 2005, I started working at</div>
+                <div contentEditable=true data-placeholder="Drag Here" class="col-lg-2 bottomBord" id="ihc"></div>
+                <div class="col-lg-7">I also became a undergraduate student for the very first time and started classes at</div>
+                <div contentEditable="true" data-placeholder="Drag Here" class="col-lg-2 bottomBord" id="USU"></div>
+                <div class="col-lg-7">
+            </div>
     </div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>

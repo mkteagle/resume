@@ -120,28 +120,26 @@ ul.intervals li.first {
     border-bottom: 1px solid black;
 }
 #xactware {
-    text-align: center;
+    text-align: left;
 }
 #delta {
     width: 15%;
-    text-align: center;
+    text-align: left;
 }
 #ihc {
-    width: 25%;
-    text-align: center;
+    text-align: left;
 }
 #usu {
-    width: 25%;
-    text-align: center;
+    text-align: left;
 }
 #travelhost {
-    text-align: center;
+    text-align: left;
 }
 #techmedia {
-    text-align: center;
+    text-align: left;
 }
 #matc {
-    text-align: center;
+    text-align: left;
 }
 [contentEditable=true]:empty:not(:focus):before{
     content:attr(data-placeholder) }
@@ -309,7 +307,10 @@ ul.intervals li.first {
 }
 @media (min-width:641px) {
     #aboutSec {
-        height: 620px;
+        height: 675px;
+    }
+    #experienceSec {
+        height: 595px;
     }
     ul.events li {
         font-size: 0.9em;

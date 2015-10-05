@@ -227,4 +227,85 @@ window.onload = function () {
         }
     }
     shuffleNodes();
+    $(function () {
+        $('[data-toggle="popover"]').popover()
+    })
 };
+function reset() {
+    var arr = ["Delta High School", "Intermountain Healthcare", "Utah State University", "Travelhost Magazine", "TechMedia Network", "Verizon Wireless", "Xactware", "MATC"];
+    var ul = document.getElementById("draggable-items");
+    ul.innerHTML = '';
+    for (var i = 0;i < arr.length; i++) {
+        var li = document.createElement("li");
+        li.appendChild(document.createTextNode(arr[i]));
+        ul.appendChild(li);
+        li.setAttribute('draggable', true);
+
+    }
+    document.getElementById("delta").innerHTML="Drag Here!";
+    document.getElementById("ihc").innerHTML="Drag Here!";
+    document.getElementById("travelhost").innerHTML="Drag Here!";
+    document.getElementById("techmedia").innerHTML="Drag Here!";
+    document.getElementById("verizon").innerHTML="Drag Here!";
+    document.getElementById("usu").innerHTML="Drag Here!";
+    document.getElementById("xactware").innerHTML="Drag Here!";
+    document.getElementById("matc").innerHTML="Drag Here!";
+};
+function validate () {
+    var delt = document.getElementById("delta").innerHTML;
+    if (delt == "Delta High School") {
+        document.getElementById("delta").style.background = 'green';
+    }
+    else {
+        document.getElementById("delta").style.background = 'red';
+    }
+    var ih = document.getElementById("ihc").innerHTML;
+    if (ih == "Intermountain Healthcare") {
+        document.getElementById("ihc").style.background = 'green';
+    }
+    else {
+        document.getElementById("ihc").style.background = 'red';
+    }
+    var us = document.getElementById("usu").innerHTML;
+    if (us == "Utah State University") {
+        document.getElementById("usu").style.background = 'green';
+    }
+    else {
+        document.getElementById("usu").style.background = 'red';
+    }
+    var travel = document.getElementById("travelhost").innerHTML;
+    if (travel == "Travelhost Magazine") {
+        document.getElementById("travelhost").style.background = 'green';
+    }
+    else {
+        document.getElementById("travelhost").style.background = 'red';
+    }
+    var tech = document.getElementById("techmedia").innerHTML;
+    if (tech == "TechMedia Network") {
+        document.getElementById("techmedia").style.background = 'green';
+    }
+    else {
+        document.getElementById("techmedia").style.background = 'red';
+    }
+    var ver = document.getElementById("verizon").innerHTML;
+    if (ver == "Verizon Wireless") {
+        document.getElementById("verizon").style.background = 'green';
+    }
+    else {
+        document.getElementById("verizon").style.background = 'red';
+    }
+    var xact = document.getElementById("xactware").innerHTML;
+    if (xact == "Xactware") {
+        document.getElementById("xactware").style.background = 'green';
+    }
+    else {
+        document.getElementById("xactware").style.background = 'red';
+    }
+    var mat = document.getElementById("matc").innerHTML;
+    if (mat == "MATC") {
+        document.getElementById("matc").style.background = 'green';
+    }
+    else {
+        document.getElementById("matc").style.background = 'red';
+    }
+}

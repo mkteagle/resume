@@ -242,14 +242,14 @@ function reset() {
         li.setAttribute('draggable', true);
 
     }
-    document.getElementById("delta").innerHTML="Drag Here!";
-    document.getElementById("ihc").innerHTML="Drag Here!";
-    document.getElementById("travelhost").innerHTML="Drag Here!";
-    document.getElementById("techmedia").innerHTML="Drag Here!";
-    document.getElementById("verizon").innerHTML="Drag Here!";
-    document.getElementById("usu").innerHTML="Drag Here!";
-    document.getElementById("xactware").innerHTML="Drag Here!";
-    document.getElementById("matc").innerHTML="Drag Here!";
+    document.getElementById("delta").setAttribute('data-placeholder', 'Drag Here!');
+    document.getElementById("ihc").setAttribute('data-placeholder', 'Drag Here!');
+    document.getElementById("travelhost").setAttribute('data-placeholder', 'Drag Here!');
+    document.getElementById("techmedia").setAttribute('data-placeholder', 'Drag Here!');
+    document.getElementById("verizon").setAttribute('data-placeholder', 'Drag Here!');
+    document.getElementById("usu").setAttribute('data-placeholder', 'Drag Here!');
+    document.getElementById("xactware").setAttribute('data-placeholder', 'Drag Here!');
+    document.getElementById("matc").setAttribute('data-placeholder', 'Drag Here!');
 };
 function validate () {
     var delt = document.getElementById("delta").innerHTML;
